@@ -1,0 +1,450 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+
+ul{
+    list-style-type: none;
+}
+
+.container{
+}
+
+.left-nav-wrap{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 370px;
+    height: 100vh;
+    background-color: #000;
+}
+
+.left-nav-wrap .feature-bottom{
+    position: fixed;
+    width: 100px;
+    height: 100vh;
+}
+
+.left-nav-wrap a{
+    margin-bottom: 20px;
+}
+
+.left-nav-wrap .fix-top{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.left-nav-wrap .fix-bottom{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.left-nav-wrap .fix-bottom a{
+    margin-right: 10px;
+}
+
+.left-nav-wrap .menu-wrap{
+    position: fixed;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    padding: 0px 30px 60px 30px;
+    margin-left: 100px;
+    width: 270px;
+    height: 100vh;
+    color:rgb(91, 103, 121);
+    background-color: rgb(34, 44, 60);
+}
+
+.left-nav-wrap .menu-wrap a{
+    display: block;
+    text-decoration: none;
+    color: #c4c4c4;
+}
+
+.left-nav-wrap .menu-wrap h5{
+    padding-bottom: 25px;
+}
+
+.left-nav-wrap .menu-wrap h5 a{
+    float: right;
+}
+
+.left-nav-wrap .menu-wrap section{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #535353;
+}
+
+.left-nav-wrap .menu-wrap .menu > a img{
+    float: right;
+    margin-top: -2px;
+}
+
+
+.left-nav-wrap .menu-wrap .products > a img{
+    margin-right: 20px;
+}
+
+.left-nav-wrap .menu-wrap .dashboard > a img{
+    float: right;
+    margin-top: 2px;
+}
+
+.left-nav-wrap .menu-wrap .dashboard h5{
+    margin-bottom: 2px;
+}
+
+.left-nav-wrap .menu-wrap .count{
+    position: fixed;
+    bottom: 0;
+    width: 200px;
+    height: 60px;
+    background-color: rgb(34, 44, 60);
+}
+
+.left-nav-wrap .menu-wrap .count p{
+    padding-top: 20px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.main-wrap{
+    margin-left: 370px;
+}
+
+.main-wrap .user-wrap{
+    position: relative;
+    padding: 0 30px;
+    height: 80px;
+}
+
+.main-wrap .user-wrap h3{
+    display: inline-block;
+    height: 80px;
+    font-size: 30px;
+    font-weight: 100;
+    line-height: 80px;
+}
+
+.main-wrap .user-wrap .user-info{
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 200px;
+}
+
+.main-wrap .user-wrap .user-info a{
+    float: left;
+    font-size: 0;
+}
+
+.main-wrap .user-wrap .user-info .user-name{
+    color: rgb(52, 49, 240);
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+.main-wrap .user-wrap .user-info .info{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    padding-left: 15px;
+    transform: translate(0, -50%);
+}
+
+
+.main-wrap .user-wrap .user-info .info .status{
+    color: #848484;
+}
+
+.main-wrap .user-wrap .user-info .arrow{
+    position: absolute;
+    right: -5px;
+    top: 49%;
+}
+
+.main-wrap .friend-list{
+    float: left;
+    box-sizing: border-box;
+    width: 400px;
+}
+
+.main-wrap .friend-list .search-box{
+    box-sizing: border-box;
+    position: relative;
+    padding: 20px 30px 0 30px;
+    border: 1px solid #c4c4c4;
+    border-left-color: transparent;
+    width: 100%;
+    height: 80px;
+}
+
+.main-wrap .friend-list .search-box input{
+    box-sizing: border-box;
+    border: 1px solid #c4c4c4;
+    padding-right: 27px;
+    border-radius: 5px;
+    height: 40px;
+    width: 100%;
+    text-indent: 1em;
+}
+
+.main-wrap .friend-list .search-box a{
+    position: absolute;
+    top: 32px;
+    right: 32px;
+}
+
+.main-wrap .friend-list .friend-item{
+    padding: 20px 20px 20px 30px; 
+    border-right: 1px solid #c4c4c4;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.friend-list .friend-item .friend-info-wrap a{
+    float: left;
+}
+
+.friend-list .friend-item .friend-info-wrap{
+    position: relative;
+    overflow: hidden;
+}
+
+.friend-list .friend-item .friend-info-wrap .info{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    padding-left: 15px;
+    transform: translate(0, -50%);
+}
+
+.friend-list .friend-item .friend-info-wrap .info .friend-name{
+    padding-bottom: 5px;
+    font-weight: 600;
+    color: #535353;
+}
+
+
+
+.friend-list .friend-item .friend-info-wrap .time{
+    position: absolute;
+    top: 9px;
+    right: 0;
+}
+
+.friend-list .friend-item .friend-info-wrap .work-in{
+    color: #848484;
+}
+
+.friend-list .friend-item .friend-info-wrap .time{
+    font-weight: 600;
+    color: #848484;
+}
+
+.has-message{
+    border-left: 2px solid rgb(35, 153, 241);
+}
+
+.has-message .friend-name{
+    color: rgb(35, 153, 241) !important;
+}
+
+.has-message .friend-name::before{
+    content: "";
+    display: inline-block;
+    border-radius: 4px;
+    margin-right: 5px;
+    width: 8px;
+    height: 8px;
+    vertical-align: middle;
+    background-color: rgb(35, 153, 241);
+    
+}
+
+
+.friend-list .friend-item .friend-message{
+    margin-top: 10px;
+    height: 2.5em;
+    font-size: 14px;
+    color: #545454;
+}
+
+.has-message .friend-message{
+    position: relative;
+    padding-right: 24px;
+}
+
+.has-message .friend-message::after{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/other/Notification4.png");
+}
+
+.main-wrap .chat-wrap{
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.main-wrap .chat-wrap .top-tools-wrap{
+    box-sizing: border-box;
+    overflow: hidden;
+    padding-left: 30px;
+    border-top: 1px solid #c4c4c4;
+    border-bottom: 1px solid #c4c4c4;
+    height: 80px;
+    
+}
+
+.main-wrap .chat-wrap .top-tools-wrap .chat-with{
+    font-size: 1.3em;
+    font-weight: 100;
+    line-height: 80px;
+    color: #535353;
+}
+
+.float-left{
+    float: left;
+}
+
+.float-right{
+    float: right;
+}
+
+.main-wrap .chat-wrap .top-tools-wrap .tool-group{
+    line-height: 80px;
+    font-size: 0;
+}
+
+.main-wrap .chat-wrap .top-tools-wrap .tool-group a{
+    display: inline-block;
+    vertical-align: middle;
+    width: 37px;
+    height: 32px;
+    background-repeat: no-repeat;
+}
+
+.main-wrap .chat-wrap .top-tools-wrap .tool-group .add-user,
+.main-wrap .chat-wrap .top-tools-wrap .tool-group .to-top,
+.main-wrap .chat-wrap .top-tools-wrap .tool-group .delect{
+    background-image: url("../images/other/Tools.png");
+}
+
+.main-wrap .chat-wrap .top-tools-wrap .tool-group .add-user{
+    background-position: 0px 0px;
+}
+
+.main-wrap .chat-wrap .top-tools-wrap .tool-group .to-top{
+    background-position: -37px 0px;
+}
+
+.main-wrap .chat-wrap .top-tools-wrap .tool-group .delect{
+    background-position: -73px 0px;
+}
+
+.main-wrap .chat-wrap .top-tools-wrap .tool-group .left,
+.main-wrap .chat-wrap .top-tools-wrap .tool-group .right{
+    background-image: url("../images/other/Chats one of.png");
+}
+
+.main-wrap .chat-wrap .top-tools-wrap .tool-group .left{
+    background-position: 0px 0px;
+}
+
+.main-wrap .chat-wrap .top-tools-wrap .tool-group .right{
+    background-position: -37px 0px;
+    margin-right: 10px;
+}
+
+
+.main-wrap .chat-wrap .top-tools-wrap .tool-group .divide{
+    display: inline-block;
+    vertical-align: middle;
+    width: 32px;
+    height: 32px;
+    background: url("../images/other/Divider.png") no-repeat center;
+}
+
+.main-wrap .chat-wrap .top-tools-wrap .page-num{
+    margin-right: 15px;
+    line-height: 80px;
+    color: #848484;
+}
+
+.chat-with::after{
+    content: "";
+    display: inline-block;
+    border-radius: 4px;
+    margin-left: 5px;
+    width: 8px;
+    height: 8px;
+    vertical-align: middle;
+    background-color: #1bb934;
+}
+
+.nick-default{
+    padding-bottom: 5px;
+    font-weight: 600;
+    color: #535353;
+}
+
+.time-default{
+    padding-left: 10px;
+    font-size: .9em;
+    color: #848484;
+}
+
+.chat-content{
+    color: #444;
+}
+
+.main-wrap .chat-wrap .chat-block{
+    overflow: hidden;
+    padding: 20px 20px 0 30px; 
+}
+
+
+.main-wrap .chat-wrap .chat-block .info-wrap{
+    overflow: hidden;
+    padding-left: 25px;
+}
+
+.divide-line{
+    position: relative;
+    margin-top: 40px;
+    height: 1.2em;
+}
+
+.divide-line .history-time{
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    padding: 0 15px 0 15px;
+    color: #848484;
+    background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
